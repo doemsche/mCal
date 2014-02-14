@@ -1,0 +1,25 @@
+<template name="layout">
+  <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{pathFor 'eventsList'}}">microEvents {{pageTitle}}
+                </a>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">  
+                {{#if currentUser}}
+                    <li>
+                        <a href="{{pathFor 'eventSubmit'}}">New Event</a>
+                    </li>
+                {{/if}}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {{ loginButtons }}
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        {{yield}} 
+    </div>
+</template>

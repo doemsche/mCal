@@ -1,0 +1,59 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "roles": {
+        "version": "1.2.6"
+      },
+      "accounts-ui-bootstrap-3": {
+        "version": "0.2.4"
+      },
+      "accounts-admin-ui-bootstrap-3": {
+        "version": "0.2.0"
+      },
+      "iron-router": {
+        "version": "0.6.2"
+      },
+      "spin": {
+        "version": "0.2.2"
+      }
+    },
+    "packages": {
+      "roles": {
+        "git": "https://github.com/alanning/meteor-roles.git",
+        "tag": "v1.2.6",
+        "commit": "f2a9058281f8f2fe028767841d7445aadd6893cf"
+      },
+      "accounts-ui-bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
+        "tag": "v0.2.4",
+        "commit": "cdbd20eb065310c0cc302bbd5f22e5b2121c769a"
+      },
+      "accounts-admin-ui-bootstrap-3": {
+        "git": "https://github.com/hharnisc/meteor-accounts-admin-ui-bootstrap-3.git",
+        "tag": "v0.2.0",
+        "commit": "bc613e55d4e8c9b419b798e92d274dc697d68b15"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.2",
+        "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
+      },
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v0.2.2",
+        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
+      },
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v3.1.0-1",
+        "commit": "329dccb08bfc18c635676dea600ac9953162cda9"
+      },
+      "bootstrap-modal": {
+        "git": "https://github.com/livingyang/meteor-bootstrap-modal.git",
+        "tag": "v2.2.5",
+        "commit": "8687f21b2ed5d41f038885c3733287b1001b13b5"
+      }
+    }
+  }
+}
