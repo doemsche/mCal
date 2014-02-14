@@ -1,5 +1,19 @@
 Events = new Meteor.Collection('events')
 
+Events.allow({
+	update: ownsDocument,
+	remove: ownsDocument
+});
+
+
+// Events.deny({
+//   update: function(userId, microEvent, fieldNames) {
+//     // may only edit the following two fields:
+//     return (_.without(fieldNames, 'title').length > 0);
+//   }
+// });
+
+
 Meteor.methods({
 	microEvent : function(options){
 		var user = Meteor.user(),
