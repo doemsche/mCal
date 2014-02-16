@@ -26,12 +26,13 @@ Meteor.methods({
 			throw new Meteor.Error(422, 'Please fill in title');
 
 		if(options.date && eventOnSameDate){
-			throw new Meteor.Error('There exists already an event on that date');
+			throw new Meteor.Error(302,'There exists already an event on that date');
 		}
 		
 		var microEvent = _.extend(_.pick(options, 'title', 'date'), {
 			userId: user._id,
 			author: user.username,
+			participationsCount: 0,
 			submitted: new Date().getTime()
 		});
 

@@ -8,10 +8,14 @@ Template.eventSubmit.events({
 		}
 
 		Meteor.call('microEvent', microEvent, function(error,id){
-			if(error)
-				return alert(error.reason)
-
-			Router.go('eventItem', {_id: id});
+			if(error){
+				throwError(error.reason);
+				if(error.error === 302){
+					Router.go('eventDetail',{_id: error.details})
+				}
+			} else {
+				Router.go('eventDetail', {_id: id} );
+			}
 		});
 
 	}

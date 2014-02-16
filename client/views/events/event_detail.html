@@ -1,0 +1,25 @@
+<template name="eventDetail">
+  <div class="event">
+  	<h3>{{title}}</h3>
+  	 <div>{{date}}</div>
+  	 <div>prt: {{participationsCount}}</div>
+  	 <a href="{{pathFor 'eventItem'}}" class="btn">Details</a>
+  	 {{#if ownsEvent}}
+  	 	<a href="{{pathFor 'eventEdit'}}" class="btn">Edit</a>
+  	 {{/if}}
+  </div>
+  <div>
+  	<ul class="participations">
+    {{#each participations}}
+      {{> participation}}
+    {{/each}}
+  </ul>
+  </div>
+  {{#if currentUser }}
+  	{{> participationSubmit }}
+  {{else}}
+  	<p>
+  		Please log in
+  	</p>
+  {{/if}}
+</template>
