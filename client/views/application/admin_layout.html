@@ -1,0 +1,30 @@
+<template name="adminLayout">
+  <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{pathFor 'eventsList'}}">microEvents {{pageTitle}}
+                </a>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse">
+           
+            <ul class="nav navbar-nav navbar-right">
+                {{ loginButtons }}
+            </ul>
+        </div>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="{{pathFor 'adminInbox' }}">Inbox</a></li>
+            <li><a href="{{pathFor 'adminTrash' }}">Trash</a></li>
+            <li><a href="{{pathFor 'adminCalendar' }}">Calandar</a></li>
+        </ul>
+    </div>
+    <div id="notifications">
+        {{yield 'list'}}
+    </div>
+    <div id="adminContainer">
+        <div>{{> errors}}</div>
+        {{yield 'detail'}} 
+    </div>
+</template>

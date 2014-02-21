@@ -1,0 +1,14 @@
+<template name="mEventsList">
+
+  {{#if isAdmin}}
+  	template admin helper is TRUE
+  {{else}}
+	template admin helper is false
+  {{/if}}
+
+  <div class="events">
+    {{#each events}}
+      {{>eventItem}}
+    {{/each}}
+  </div>
+</template>

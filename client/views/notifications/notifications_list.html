@@ -1,0 +1,15 @@
+<template name="notificationsList">
+  <ul>
+    {{#each notifications}}
+      {{> notification }}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="notification">
+  <li>
+    <a href="#">
+      <strong>x</strong> commented on your post
+    </a>
+  </li>
+</template>

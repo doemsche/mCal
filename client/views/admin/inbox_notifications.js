@@ -1,0 +1,4 @@
+Template.inboxNotifications.events({
+
+
+});

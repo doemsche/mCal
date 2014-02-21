@@ -11,6 +11,8 @@ Meteor.methods({
 
 		var participationId = Participations.insert(participation);
 
+		createParticipationNotification(participation);
+
 		Events.update(participation.eventId, {$inc: {participationsCount: 1}});
 
 		return participationId;
