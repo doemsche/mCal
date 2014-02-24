@@ -9,12 +9,35 @@ Meteor.methods({
 			submitted: new Date().getTime()
 		});
 
-		var participationId = Participations.insert(participation);
+		var existingParticipation = Participations.findOne(
+			{
+				eventId: options.eventId,
+				userId: user._id
+			}
+		);
 
-		createParticipationNotification(participation);
+		//
 
-		Events.update(participation.eventId, {$inc: {participationsCount: 1}});
+		if(existingParticipation === undefined){
+			participation.attend = true;
+			var participationId = Participations.insert(participation);
+			//createParticipationNotification(participation);
+			Events.update(participation.eventId, {$inc: {participationsCount: 1}});
+			return participationId;
+		}
 
-		return participationId;
+		else{
+			
+			Participations.update(
+				{
+					eventId: existingParticipation.eventId,
+					userId: existingParticipation.userId
+				},
+				{
+					$set:{ attend: false }
+				}
+			)
+		}
+		
 	}
 }); 

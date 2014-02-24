@@ -1,0 +1,443 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"require",
+				"requireAdminPrivileges"
+			],
+			[
+				"mic",
+				"microEventId"
+			],
+			[
+				"load",
+				"loadingTemplate"
+			],
+			[
+				"re",
+				"requireLogin"
+			],
+			[
+				"m",
+				"mCalEvent"
+			],
+			[
+				"layout",
+				"layoutTemplate"
+			],
+			[
+				"TELL",
+				"TELLER_02"
+			],
+			[
+				"TELLER",
+				"TELLER_01"
+			],
+			[
+				"set",
+				"setGoogleAnalytics"
+			],
+			[
+				"post",
+				"postData"
+			],
+			[
+				"po",
+				"postData"
+			],
+			[
+				"write",
+				"writeHead"
+			],
+			[
+				"star",
+				"startTime"
+			],
+			[
+				"boardId",
+				"boardId1"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"rando",
+				"getRandomInt"
+			],
+			[
+				"num",
+				"numBoards"
+			],
+			[
+				"get",
+				"getRandomInt"
+			],
+			[
+				"att",
+				"attribute"
+			],
+			[
+				"stack",
+				"stack_name"
+			],
+			[
+				"ini",
+				"incidentAttributes"
+			],
+			[
+				"ti",
+				"timeEnd"
+			],
+			[
+				"time",
+				"timeStart"
+			],
+			[
+				"inciden",
+				"incidentAttributes"
+			],
+			[
+				"font-s",
+				"font-style"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"yam",
+				"Set Syntax: YAML"
+			],
+			[
+				"haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"coff",
+				"Coffee: Run Script"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"coffe",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"syn",
+				"Set Syntax: Ruby"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"syntax bas",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"syntax rub",
+				"Set Syntax: Ruby"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/doemsche/Sites/mCal/client/views/application/user_layout.js",
+		"/Users/doemsche/Sites/mCal/lib/router.js",
+		"/Users/doemsche/Sites/mCal/client/views/application/admin_layout.html",
+		"/Users/doemsche/Sites/mCal/client/views/admin/inbox_notifications.js",
+		"/Users/doemsche/Sites/mCal/client/views/notifications/notifications.html",
+		"/Users/doemsche/Sites/mCal/client/views/admin/inbox_notifications.html",
+		"/Users/doemsche/Sites/mCal/client/views/application/user_layout.html",
+		"/Users/doemsche/Sites/mCal/client/views/events/events_list.html",
+		"/Users/doemsche/Sites/mCal/client/views/events/event_item.html",
+		"/Users/doemsche/Sites/mCal/client/views/events/event_item.js",
+		"/Users/doemsche/Sites/mCal/client/views/events/event_detail.html",
+		"/Users/doemsche/Sites/mCal/client/views/admin/inbox_notifications.hmtl",
+		"/Users/doemsche/Sites/mCal/main.css",
+		"/Users/doemsche/Sites/_test/meteor-rtd-example-project/app/models/Players.js",
+		"/Users/doemsche/Sites/_test/meteor-rtd-example-project/README.md",
+		"/Users/doemsche/sites/mCal/main.html",
+		"/Users/doemsche/sites/mCal/packages/roles/roles_client.js",
+		"/Users/doemsche/sites/mCal/client/helpers/handlebars.js",
+		"/Users/doemsche/sites/mCal/packages/roles/roles_server.js",
+		"/Users/doemsche/sites/mCal/packages/roles/roles_common.js",
+		"/Users/doemsche/sites/mCal/lib/router.js",
+		"/Users/doemsche/Documents/Privat/portfolio/templates/project.tpl",
+		"/Users/doemsche/Documents/Privat/portfolio/templates/project_detail.tpl",
+		"/Users/doemsche/Documents/Privat/portfolio/project.php",
+		"/Users/doemsche/Downloads/web160-a-wor-432.sql",
+		"/Users/doemsche/Documents/Privat/portfolio/templates/footer.tpl",
+		"/Users/doemsche/Sites/mCal/client/views/notifications/notifications.js",
+		"/Users/doemsche/Sites/mCal/client/views/application/layout.html",
+		"/Users/doemsche/Sites/mCal/client/views/application/adminLayout.js",
+		"/Users/doemsche/Sites/mCal/client/views/includes/not_found.html",
+		"/Users/doemsche/Sites/mCal/client/views/application/adminLayout.html",
+		"/Users/doemsche/Sites/mCal/collections/notifications.js",
+		"/Users/doemsche/Sites/mCal/client/views/events/events_list.js",
+		"/Users/doemsche/Sites/mCal/client/views/includes/access_denied.html",
+		"/Users/doemsche/Sites/mCal/client/views/events/event_detail.js",
+		"/Users/doemsche/Sites/mCal/collections/events.js",
+		"/Users/doemsche/Sites/mCal/client/views/events/event_submit.js",
+		"/Users/doemsche/Sites/mCal/collections/participations.js",
+		"/Users/doemsche/Sites/mCal/server/publications.js",
+		"/Users/doemsche/Sites/mCal/client/views/participations/participation.js",
+		"/Users/doemsche/Sites/mCal/client/views/participations/participation_submit.js",
+		"/Users/doemsche/Sites/mCal/client/views/participations/participation.html",
+		"/Users/doemsche/Sites/mCal/client/views/participations/participation_submit.html",
+		"/Users/doemsche/Sites/mCal/server/fixtures.js",
+		"/Users/doemsche/Sites/mCal/client/views/includes/errors.html",
+		"/Users/doemsche/Sites/mCal/client/views/includes/errors.js",
+		"/Users/doemsche/Sites/mCal/client/helpers/errors.js",
+		"/Users/doemsche/Sites/mCal/lib/permissions.js",
+		"/Users/doemsche/Sites/mCal/client/views/events/event_edit.js",
+		"/Users/doemsche/Sites/mCal/client/views/events/event_edit.html",
+		"/Users/doemsche/Sites/mCal/client/views/includes/accessDenied.html",
+		"/Users/doemsche/Sites/mCal/client/views/events/event_submit.html",
+		"/Users/doemsche/Sites/mCal/client/views/includes/loading.html",
+		"/Users/doemsche/Sites/mCal/main.html",
+		"/Users/doemsche/Sites/mCal/client/views/application/layout.js",
+		"/Users/doemsche/Sites/mCal/client/subscriptions.js",
+		"/Users/doemsche/Sites/microscope/server/publications.coffee",
+		"/Users/doemsche/Sites/microscope/client/views/posts/post_item.html",
+		"/Users/doemsche/Sites/mCal/.meteor/packages",
+		"/Users/doemsche/Sites/mCal/client/stylesheets/styles.css",
+		"/Users/doemsche/Sites/mCal/.meteor/release",
+		"/Users/doemsche/Sites/mCal/client/stylesheets/nano.save",
+		"/Users/doemsche/Sites/_test/staticPage/staticPage.html",
+		"/Users/doemsche/Sites/_test/staticPage/staticPage.js",
+		"/Users/doemsche/Desktop/Lebensmittelpyramide.txt",
+		"/Users/doemsche/Desktop/nvvk.html",
+		"/Users/doemsche/sites/_test/MyApp/app/view/Main.js",
+		"/Users/doemsche/sites/_test/MyApp/app.js",
+		"/Users/doemsche/Desktop/t.rb",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/lib/tic_tac_toe.rb",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/spec/board_spec.rb",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/spec/spec_helper.rb",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/lib/tic_tac_toe/core_extensions.rb",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/lib/tic_tac_toe/board.rb",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/lib/tic_tac_toe/core_extendions.rb",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/spec/spec_board.rb",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/lib/tic_tac_toe/cell.rb",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/tic_tac_toe.gemspec",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/spec/cell_spec.rb",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/spec/player_spec.rb",
+		"/Users/doemsche/Sites/_test/ruby/tic_tac_toe/lib/tic_tac_toe/player.rb",
+		"/Users/doemsche/Documents/Privat/portfolio/_resources/js/ga.js",
+		"/Users/doemsche/Documents/Privat/portfolio/index.php",
+		"/Users/doemsche/Documents/Privat/portfolio/templates/index.tpl",
+		"/Users/doemsche/Documents/Privat/portfolio/configs/test.conf",
+		"/Users/doemsche/Sites/_test/node_test/requestHandlers.js",
+		"/Users/doemsche/Sites/_test/node_test/hw.js",
+		"/Users/doemsche/Sites/_test/node_test/main.js",
+		"/Users/doemsche/Library/Application Support/Sublime Text 2/Packages/User/JavaScript/hello.sublime-snippet",
+		"/Users/doemsche/Library/Application Support/Sublime Text 2/Packages/User/JavaScript/cl.sublime-snippet",
+		"/Users/doemsche/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/doemsche/Documents/Privat/portfolio/index.html",
+		"/Users/doemsche/.ssh/known_hosts",
+		"/Users/doemsche/Downloads/phpinfo (1).php",
+		"/Users/doemsche/.ssh/id_rsa.pub",
+		"/Users/doemsche/Sites/_test/nanoc/test/cli/test_cleaning_stream.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/source_data/code_snippet.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/source_data/configuration.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/source_data/data_source.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/source_data/item_array.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/source_data/layout.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/core_ext/array.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/core_ext/date.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/core_ext/hash.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/core_ext/pathname.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/core_ext/string.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/memoization.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/notification_center.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/ordered_hash.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/base/core_ext.rb",
+		"/Users/doemsche/Sites/_test/nanoc/lib/nanoc/version.rb",
+		"/Users/doemsche/Sites/_test/nanoc/bin/nanoc",
+		"/Users/doemsche/Sites/metrello/server/fixtures.js",
+		"/Users/doemsche/Sites/metrello/metrello.html",
+		"/Users/doemsche/Sites/metrello/client/metrello.js",
+		"/Users/doemsche/Sites/metrello/metrello.css",
+		"/Users/doemsche/Sites/metrello/collections/Cards.js",
+		"/Users/doemsche/Sites/metrello/collections/Boards.js",
+		"/Users/doemsche/Sites/metrello/client/board.js",
+		"/Users/doemsche/Sites/metrello/metrello.js",
+		"/Users/doemsche/Sites/metrello/client/lib/router.js",
+		"/Users/doemsche/Sites/metrello/client/views/boards/board_page.js",
+		"/Users/doemsche/Sites/metrello/server/publications.js",
+		"/Users/doemsche/Sites/metrello/collections/Lists.js",
+		"/Users/doemsche/Sites/microscope/collections/posts.coffee",
+		"/Users/doemsche/Sites/microscope/client/main.coffee"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/doemsche/Sites/iCreator/client/views",
+			"<project>",
+			"/Users/doemsche/Sites/iCreator/client"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"');\n",
+			"console.log",
+			"Router",
+			"admin",
+			"wp_catego",
+			"wp_cat",
+			"cate",
+			"posts",
+			"*!4000",
+			"participationsCount",
+			"Participations",
+			"post",
+			"eventSubmit",
+			"var requireLogin = function() { \n	if (!Meteor.user() ) {\n		this.stop(); \n	}\n};",
+			"post",
+			"event",
+			"eventsList",
+			"TELLER_02",
+			"collection",
+			"Collection",
+			"card",
+			"module TicTacToe\n	class Player\n		attr_reader :color, :name\n		def initialize(input)\n			@color = input.fetch(:color)\n			@color = input.fetch(:name)\n		end\n	end\nend",
+			"router",
+			"boardId",
+			"boardId1",
+			"s",
+			"each",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true
+}
