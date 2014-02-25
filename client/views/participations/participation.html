@@ -1,5 +1,5 @@
 <template name="participation">
-  <li>
+  <li class="{{#unless attend}}not-attending{{/unless}}">
     {{userId}} - ( {{submittedText}} )
   </li>
 </template>

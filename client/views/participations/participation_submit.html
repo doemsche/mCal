@@ -2,7 +2,11 @@
   <form name="participation" class="participation-form">
     <div class="control-group">
         <div class="controls">
-            <button type="submit" class="btn">Anmelden</button>
+        	{{#unless userIsAttending}}
+            	<button type="submit" class="btn">Anmelden</button>
+            {{else}}
+            	<button type="submit" class="btn">Abmelden</button>
+            {{/unless}}
         </div>
     </div>
   </form>

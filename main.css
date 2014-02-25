@@ -52,3 +52,7 @@ background: #fff;
 -ms-transition: opacity .3s;
 transition: opacity .3s;
 }
+
+.not-attending{
+	opacity: 0.5;
+}

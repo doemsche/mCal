@@ -1,8 +1,14 @@
+Template.participationSubmit.helpers({
+  userIsAttending: function(){
+    var user = Meteor.user();
+    var participation = Participations.findOne({eventId: this._id, userId: user._id});
+    return participation.attend ? true : false
+  }
+});
+
 Template.participationSubmit.events({
   'submit form': function(e, template) {
     e.preventDefault();
-
-    var $body = $(e.target).find('[name=body]');
 
     var microEvent = {
       eventId: template.data._id

@@ -16,8 +16,6 @@ Meteor.methods({
 			}
 		);
 
-		//
-
 		if(existingParticipation === undefined){
 			participation.attend = true;
 			var participationId = Participations.insert(participation);
@@ -34,7 +32,7 @@ Meteor.methods({
 					userId: existingParticipation.userId
 				},
 				{
-					$set:{ attend: false }
+					$set:{ attend: !existingParticipation.attend }
 				}
 			)
 		}

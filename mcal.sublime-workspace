@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ex",
+				"existingParticipation"
+			],
+			[
 				"require",
 				"requireAdminPrivileges"
 			],
@@ -111,9 +115,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 127.0,
 		"selected_items":
 		[
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
 			[
 				"javascr",
 				"Set Syntax: JavaScript"
@@ -184,8 +192,25 @@
 	},
 	"file_history":
 	[
-		"/Users/doemsche/Sites/mCal/client/views/application/user_layout.js",
+		"/Users/doemsche/sites/wolffondue/server/publications.js",
+		"/Users/doemsche/Sites/mCal/collections/notifications.js",
+		"/Users/doemsche/Sites/mCal/collections/participations.js",
+		"/Users/doemsche/sites/wolffondue/collections/users.js",
+		"/Users/doemsche/Sites/mCal/client/views/participations/participation_submit.js",
+		"/Users/doemsche/Sites/mCal/client/views/participations/participation_submit.html",
+		"/Users/doemsche/Sites/mCal/client/views/participations/participation.js",
+		"/Users/doemsche/Sites/mCal/client/views/events/event_detail.js",
+		"/Users/doemsche/Sites/mCal/client/views/participations/participation.html",
+		"/Users/doemsche/Sites/mCal/client/views/events/event_detail.html",
+		"/Users/doemsche/Sites/mCal/collections/events.js",
+		"/Users/doemsche/Sites/mCal/server/publications.js",
+		"/Users/doemsche/sites/wolffondue/server/config.js",
 		"/Users/doemsche/Sites/mCal/lib/router.js",
+		"/Users/doemsche/sites/wolffondue/client/index.html",
+		"/Users/doemsche/Sites/mCal/mcal.sublime-project",
+		"/Users/doemsche/sites/mCal/mcal.sublime-project",
+		"/Users/doemsche/sites/mCal/mcal.sublime-workspace",
+		"/Users/doemsche/Sites/mCal/client/views/application/user_layout.js",
 		"/Users/doemsche/Sites/mCal/client/views/application/admin_layout.html",
 		"/Users/doemsche/Sites/mCal/client/views/admin/inbox_notifications.js",
 		"/Users/doemsche/Sites/mCal/client/views/notifications/notifications.html",
@@ -194,7 +219,6 @@
 		"/Users/doemsche/Sites/mCal/client/views/events/events_list.html",
 		"/Users/doemsche/Sites/mCal/client/views/events/event_item.html",
 		"/Users/doemsche/Sites/mCal/client/views/events/event_item.js",
-		"/Users/doemsche/Sites/mCal/client/views/events/event_detail.html",
 		"/Users/doemsche/Sites/mCal/client/views/admin/inbox_notifications.hmtl",
 		"/Users/doemsche/Sites/mCal/main.css",
 		"/Users/doemsche/Sites/_test/meteor-rtd-example-project/app/models/Players.js",
@@ -215,18 +239,9 @@
 		"/Users/doemsche/Sites/mCal/client/views/application/adminLayout.js",
 		"/Users/doemsche/Sites/mCal/client/views/includes/not_found.html",
 		"/Users/doemsche/Sites/mCal/client/views/application/adminLayout.html",
-		"/Users/doemsche/Sites/mCal/collections/notifications.js",
 		"/Users/doemsche/Sites/mCal/client/views/events/events_list.js",
 		"/Users/doemsche/Sites/mCal/client/views/includes/access_denied.html",
-		"/Users/doemsche/Sites/mCal/client/views/events/event_detail.js",
-		"/Users/doemsche/Sites/mCal/collections/events.js",
 		"/Users/doemsche/Sites/mCal/client/views/events/event_submit.js",
-		"/Users/doemsche/Sites/mCal/collections/participations.js",
-		"/Users/doemsche/Sites/mCal/server/publications.js",
-		"/Users/doemsche/Sites/mCal/client/views/participations/participation.js",
-		"/Users/doemsche/Sites/mCal/client/views/participations/participation_submit.js",
-		"/Users/doemsche/Sites/mCal/client/views/participations/participation.html",
-		"/Users/doemsche/Sites/mCal/client/views/participations/participation_submit.html",
 		"/Users/doemsche/Sites/mCal/server/fixtures.js",
 		"/Users/doemsche/Sites/mCal/client/views/includes/errors.html",
 		"/Users/doemsche/Sites/mCal/client/views/includes/errors.js",
@@ -304,14 +319,7 @@
 		"/Users/doemsche/Sites/metrello/metrello.css",
 		"/Users/doemsche/Sites/metrello/collections/Cards.js",
 		"/Users/doemsche/Sites/metrello/collections/Boards.js",
-		"/Users/doemsche/Sites/metrello/client/board.js",
-		"/Users/doemsche/Sites/metrello/metrello.js",
-		"/Users/doemsche/Sites/metrello/client/lib/router.js",
-		"/Users/doemsche/Sites/metrello/client/views/boards/board_page.js",
-		"/Users/doemsche/Sites/metrello/server/publications.js",
-		"/Users/doemsche/Sites/metrello/collections/Lists.js",
-		"/Users/doemsche/Sites/microscope/collections/posts.coffee",
-		"/Users/doemsche/Sites/microscope/client/main.coffee"
+		"/Users/doemsche/Sites/metrello/client/board.js"
 	],
 	"find":
 	{
