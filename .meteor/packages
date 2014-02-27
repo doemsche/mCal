@@ -6,9 +6,11 @@
 standard-app-packages
 preserve-inputs
 accounts-password
-roles
 accounts-ui-bootstrap-3
 accounts-admin-ui-bootstrap-3
 iron-router
 spin
 bootstrap-3
+accounts-facebook
+roles
+modernizr-meteor

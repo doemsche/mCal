@@ -2,7 +2,12 @@ Template.participationSubmit.helpers({
   userIsAttending: function(){
     var user = Meteor.user();
     var participation = Participations.findOne({eventId: this._id, userId: user._id});
-    return participation.attend ? true : false
+    if(participation === undefined){
+      return false;
+    } else {
+      return participation.attend ? true : false
+    }
+    
   }
 });
 

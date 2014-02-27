@@ -25,6 +25,8 @@ Meteor.methods({
 		}
 
 		else{
+
+			//createParticipationNotification(existingParticipation);
 			
 			Participations.update(
 				{
@@ -32,7 +34,7 @@ Meteor.methods({
 					userId: existingParticipation.userId
 				},
 				{
-					$set:{ attend: !existingParticipation.attend }
+					$set:{ attend: !existingParticipation.attend, submitted: new Date().getTime() }
 				}
 			)
 		}

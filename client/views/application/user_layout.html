@@ -13,11 +13,17 @@
             </ul>
         </div>
     </div>
-    <div>{{> errors}}</div>
-    <div class="container">
-        {{yield}} 
-    </div>
-    <div>
-        {{>eventsList}}
-    </div>
+    {{#if currentUser}}
+        <div>{{> errors}}</div>
+        <button id="showBottom">Show/Hide Bottom Slide Menu</button>
+        <div class="cbp-spmenu-push">
+            <nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s4">
+                {{>eventsList}}
+        </nav>
+        </div>
+        <div class="container">
+            {{yield}} 
+        </div>
+
+    {{/if}}
 </template>
