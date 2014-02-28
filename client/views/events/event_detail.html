@@ -1,13 +1,19 @@
 <template name="eventDetail">
+  {{#if prevEvent}}
+    <div><a href="{{pathFor 'eventDetail' prevEvent}}">Previous Event</a></div>
+  {{/if}}
+  {{#if nextEvent}}
+    <div><a href="{{pathFor 'eventDetail' nextEvent}}">Next Event</a></div>
+  {{/if}}
   <div class="event">
   	<h3>{{title}}</h3>
   	 <div>{{date}}</div>
   	 <div>prt: {{participationsCount}}</div>
-  	 <a href="{{pathFor 'eventItem'}}" class="btn">Details</a>
   	 {{#if ownsEvent}}
   	 	<a href="{{pathFor 'eventEdit'}}" class="btn">Edit</a>
   	 {{/if}}
   </div>
+
   <div>
   	<ul class="participations">
     {{#each participations}}
