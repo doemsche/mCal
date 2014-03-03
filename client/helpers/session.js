@@ -1,0 +1,1 @@
+Session.setDefault('gui-state-calViewShow', false);

@@ -1,5 +1,6 @@
 Template.calendarView.rendered = function(){
-$('#calendar').fullCalendar({
+	console.log('calendarview rendered called');
+	$('#calendar').fullCalendar({
 		height:200,
 		monthNames: ['Janaur','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'],
 		monthNamesShort: ['Jan','Feb','Mar','Apr','Mai','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
@@ -17,10 +18,8 @@ $('#calendar').fullCalendar({
 					editable: false,
 					backgroundColor: '#ff0000'
 				};
-				console.log(fcObj);
 				arr.push(fcObj);
 			});
-			console.log(arr);
 			return arr;
 		}(),
 		eventClick:function(calEvent,jsEvent,view){
@@ -31,3 +30,19 @@ $('#calendar').fullCalendar({
 		}
 	});
 }
+
+// Template.calendarView.rendered = function ( ) {
+// 	var menuBottom = document.getElementById( 'cal-menu' ),
+// 			showBottom = document.getElementById( 'showBottom' );
+		
+// 	if(Session.get('gui-state-menu-bottom') == "visible" ){
+// 		classie.toggle(menuBottom, 'cbp-spmenu-open' )
+// 	}
+	
+
+// 	showBottom.onclick = function() {
+// 		Session.set('gui-state-menu-bottom', 'visible');
+		
+// 		classie.toggle( menuBottom, 'cbp-spmenu-open' );
+// 	};
+// }

@@ -19,18 +19,16 @@ Template.eventDetail.helpers({
 
 });
 
-Template.eventDetail.rendered = function ( ) {
-	var menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
-			showBottom = document.getElementById( 'showBottom' )
+Template.eventDetail.rendered = function(){
+	if( !Session.get('gui-state-calViewShow') ){
+		$('#cal-menu').removeClass('cbp-spmenu-open');
+		Session.set('gui-state-calViewShow', false);
+		console.log("FALSE")
 
-	if(Session.get('gui-state-menu-bottom') == "visible"){
-		classie.add(menuBottom, 'cbp-spmenu-open' )
-	}
-	
-
-	showBottom.onclick = function() {
-		Session.set('gui-state-menu-bottom', 'visible');
-		
-		classie.toggle( menuBottom, 'cbp-spmenu-open' );
-	};
+	} else {
+		$('#cal-menu').addClass('cbp-spmenu-open');
+		Session.set('gui-state-calViewShow', true);
+		console.log("TRUE")
+	}	
 }
+
