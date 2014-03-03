@@ -61,7 +61,8 @@ transition: opacity .3s;
 /*from code drop*/
 /* General styles for all menus */
 .cbp-spmenu {
-	background: #47a3da;
+	border-top:1px;
+	box-shadow: 1px 1px 1px #333;
 	position: fixed;
 }
 
