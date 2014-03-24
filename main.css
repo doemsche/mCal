@@ -1,3 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body{
+	font-family: source-sans-pro,'Source Sans Pro','Proxima Nova',"Helvetica Neue",sans-serif;
+}
+
 /* CSS declarations go here */
 #sidebar {
 	-webkit-box-sizing: border-box;
@@ -58,11 +64,21 @@ transition: opacity .3s;
 }
 
 
-.fc-event-inner{
+.fc-event{
 	cursor: pointer;
+	text-indent: -1000px;
+	width:4px;
+	height:4px;
+	border-radius: 4px;
 }
 
+.fc-view{
+	width:200px;
+}
 
+.container{
+	min-height:480px;
+}
 /* Transitions */
 
 /*.cbp-spmenu,
@@ -74,4 +90,13 @@ transition: opacity .3s;
 
 #cal-menu{
 	box-shadow: 0px 0px 0px #888, 0px -3px 5px #888;
+	font-family: source-sans-pro,'Source Sans Pro','Proxima Nova',"Helvetica Neue",sans-serif
+}
+
+.user-img{
+display: inline;
+float: right;
+/* margin-top: 16px; */
+/*border: 2px solid white;*/
+border-radius: 3px;
 }

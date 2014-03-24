@@ -39,7 +39,7 @@ Template.calendarView.events({
 		var newMonth = date.getMonth()+1;
 		date.setMonth(newMonth);
 		Session.set('gui-state-cal-date', date);
-		console.log(Session.get('gui-state-cal-date'));
+		// console.log(Session.get('gui-state-cal-date'));
 	},
 	'click .fc-button-prev': function(e){
 		e.preventDefault();
@@ -47,6 +47,6 @@ Template.calendarView.events({
 		var newMonth = date.getMonth()-1;
 		date.setMonth(newMonth);
 		Session.set('gui-state-cal-date', date);
-		console.log(Session.get('gui-state-cal-date'));		
+		// console.log(Session.get('gui-state-cal-date'));		
 	}
 });

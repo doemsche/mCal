@@ -7,10 +7,12 @@
             </div>
         </div>
         <div class="navbar-collapse collapse">
-           
             <ul class="nav navbar-nav navbar-right">
-               <!--  {{ loginButtons }} -->
+                {{ loginButtons }}
             </ul>
+            <div class="user-img">
+                <img src="{{userImage}}" />
+            </div>
         </div>
     </div>
     {{#if currentUser}}
@@ -21,8 +23,8 @@
         </div>
 
         
-        <span class="glyphicon glyphicon-plus"></span>
-        <button id="show-cal" >Calendar </button>
+        
+        <button id="show-cal" ><span class="glyphicon glyphicon-plus"></span>Calendar </button>
         <nav id="cal-menu">
             {{>calendarView}}
         </nav>
