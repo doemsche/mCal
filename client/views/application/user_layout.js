@@ -4,15 +4,16 @@ Template.userLayout.helpers({
 	}
 });
 
-Template.userLayout.events({
-	'click #showBottom': function(e){
-		e.preventDefault();
-		if( !Session.get('gui-state-calViewShow') ){
-			$('#cal-menu').addClass('cbp-spmenu-open');
-			Session.set('gui-state-calViewShow', true);
-		} else {
-			$('#cal-menu').removeClass('cbp-spmenu-open');
-			Session.set('gui-state-calViewShow', false);
-		}		
-	}
-});
+
+
+Template.userLayout.rendered = function(){
+		var date = Session.get('gui-state-cal-date');
+
+
+	$('#calendar').fullCalendar( 'gotoDate',
+		date.getFullYear(),
+		date.getMonth(),
+		date.getDate()
+	);
+}
+
