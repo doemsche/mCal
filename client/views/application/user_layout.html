@@ -4,6 +4,13 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="">microEvents {{pageTitle}}
                 </a>
+                {{#if isAdmin}}
+                <div class="admin-btn-container">
+                    <a href="/admin/inbox" class="btn btn-primary">
+                        Go to Admin Interface
+                    </a>
+                </div>
+                {{/if}}
             </div>
         </div>
         <div class="navbar-collapse collapse">

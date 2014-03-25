@@ -100,3 +100,9 @@ float: right;
 /*border: 2px solid white;*/
 border-radius: 3px;
 }
+
+
+.admin-btn-container{
+	margin-left: 140px;
+margin-top: 7px;
+}
