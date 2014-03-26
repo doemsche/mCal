@@ -19,7 +19,7 @@ Meteor.methods({
 		if(existingParticipation === undefined){
 			participation.attend = true;
 			var participationId = Participations.insert(participation);
-			//createParticipationNotification(participation);
+			createParticipationNotification(participation);
 			Events.update(participation.eventId, {$inc: {participationsCount: 1}});
 			return participationId;
 		}

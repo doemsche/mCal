@@ -6,7 +6,7 @@
                 </a>
                 <div class="admin-btn-container">
                     {{#if isAdmin}}
-                        <a href="/admin/inbox" class="btn btn-primary">
+                        <a href="/admin/calendar" class="btn btn-primary">
                             Go to Admin Interface
                         </a>
                     {{/if}}
@@ -24,9 +24,9 @@
     {{#if isAdmin}}
         <div id="sidebar">
             <ul>
+                <li><a href="{{pathFor 'adminEventDetail' }}">Calandar</a></li>
                 <li><a href="{{pathFor 'adminInbox' }}">Inbox</a></li>
-               <!--  <li><a href="{{pathFor 'adminTrash' }}">Trash</a></li> -->
-                <li><a href="{{pathFor 'adminCalendar' }}">Calandar</a></li>
+                <li><a href="{{pathFor 'adminTrash' }}">Trash</a></li>
             </ul>
         </div>
         <div id="notifications">
@@ -34,7 +34,7 @@
         </div>
         <div id="adminContainer">
             <div>{{> errors}}</div>
-            {{yield }} 
+            {{yield 'detail'}} 
         </div>
     {{/if}}
 </template>
