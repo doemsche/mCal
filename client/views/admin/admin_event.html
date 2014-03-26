@@ -1,3 +1,7 @@
 <template name="adminEvent">
-	<li>{{title}}</li>
+	<li>
+		<a href="{{pathFor 'adminEventDetail' this}}">
+			{{title}}
+		</a>
+	</li>
 </template>
