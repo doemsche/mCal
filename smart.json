@@ -2,7 +2,7 @@
   "packages": {
     "accounts-ui-bootstrap-3": {},
     "accounts-admin-ui-bootstrap-3": {},
-    "iron-router": {},
+    "iron-router": "0.6.2",
     "spin": {},
     "modernizr-meteor": {},
     "fullcalendar": {}
