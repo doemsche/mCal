@@ -1,4 +1,4 @@
-if(Events.find().count() === 0 ){
+if(MEvents.find().count() === 0 ){
 	var now = new Date().getTime();
 	//var microEventId = Events.findOne()._id
 
@@ -29,7 +29,7 @@ if(Events.find().count() === 0 ){
 	//     submitted: now - 3 * 3600 * 1000,
 	//   });
 	for (var i = 1; i < 13; i++) {
-		Events.insert({
+		MEvents.insert({
 			title: 'micro Event' + i,
 			author: 'doemsche',
 			userId: adminId,

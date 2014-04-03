@@ -1,6 +1,6 @@
-Events = new Meteor.Collection('events')
+MEvents = new Meteor.Collection('mEvents')
 
-Events.allow({
+MEvents.allow({
 	update: ownsDocument,
 	remove: ownsDocument
 });
@@ -15,30 +15,30 @@ Events.allow({
 
 
 Meteor.methods({
-	microEvent : function(options){
+	mEvent : function(options){
 		var user = Meteor.user(),
-			eventOnSameDate = Events.findOne({ date: options.date} );
+			mEventOnSameDate = MEvents.findOne({ date: options.date} );
 
 		if(!user)
-			throw new Meteor.Error(401, "You need to login to create new events");
+			throw new Meteor.Error(401, "You need to login to create new Micro Events");
 
 		if(!options.title)
 			throw new Meteor.Error(422, 'Please fill in title');
 
-		if(options.date && eventOnSameDate){
-			throw new Meteor.Error(302,'There exists already an event on that date');
+		if(options.date && mEventOnSameDate){
+			throw new Meteor.Error(302,'There exists already an Micro Event on that date');
 		}
 		
-		var microEvent = _.extend(_.pick(options, 'title', 'date'), {
+		var mEvent = _.extend(_.pick(options, 'title', 'date'), {
 			userId: user._id,
 			author: user.username,
 			participationsCount: 0,
 			submitted: new Date().getTime()
 		});
 
-		var microEventId = Events.insert(microEvent);
+		var mEventId = MEvents.insert(mEvent);
 
-		return microEventId;
+		return mEventId;
 	}
 });
 

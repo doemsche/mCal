@@ -5,6 +5,7 @@
     "iron-router": {},
     "spin": {},
     "modernizr-meteor": {},
-    "fullcalendar": {}
+    "fullcalendar": {},
+    "percolatestudio-migrations": {}
   }
 }

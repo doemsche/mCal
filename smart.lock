@@ -19,6 +19,9 @@
       },
       "fullcalendar": {
         "version": "1.6.1"
+      },
+      "percolatestudio-migrations": {
+        "version": "0.6.0"
       }
     },
     "packages": {
@@ -51,6 +54,11 @@
         "git": "https://github.com/TimHeckel/meteor-fullcalendar.git",
         "tag": "v1.6.1",
         "commit": "78dba7c564bf7baacf6556c70a3cc179d0e137c4"
+      },
+      "percolatestudio-migrations": {
+        "git": "https://github.com/percolatestudio/meteor-migrations.git",
+        "tag": "v0.6.0",
+        "commit": "baa77d4c121f6f06b6aa142ee11f71ace8795f7f"
       },
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",

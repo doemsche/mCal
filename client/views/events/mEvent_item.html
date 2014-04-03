@@ -1,0 +1,11 @@
+<template name="mEventItem">
+  <div class="m-event">
+  	<h3>{{title}}</h3>
+  	 <div>{{date}}</div>
+  	 <div>prt: {{participationsCount}}</div>
+  	 <a href="{{pathFor 'mEventDetail'}}" class="btn">Users View</a>
+  	 {{#if ownsEvent}}
+  	 	<a href="{{pathFor 'mEventEdit'}}" class="btn">Edit</a>
+  	 {{/if}}
+  </div>
+</template>

@@ -1,9 +1,9 @@
-Meteor.publish('events', function(){	
-	return Events.find();	
+Meteor.publish('mEvents', function(){	
+	return MEvents.find();	
 });
 
-Meteor.publish('participations', function(eventId){
-	return Participations.find({eventId: eventId});
+Meteor.publish('participations', function(mEventId){
+	return Participations.find({mEventId: mEventId});
 });
 
 Meteor.publish('notifications', function() {

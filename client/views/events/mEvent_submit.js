@@ -1,20 +1,20 @@
-Template.eventSubmit.events({
+Template.mEventSubmit.events({
 	'submit form': function(e){
 		e.preventDefault();
 
-		var microEvent = {
+		var mEvent = {
 			title: $(e.target).find('[name=title]').val(),
 			date: $(e.target).find('[name=date]').val()
 		}
 
-		Meteor.call('microEvent', microEvent, function(error,id){
+		Meteor.call('mEvent', mEvent, function(error,id){
 			if(error){
 				throwError(error.reason);
 				if(error.error === 302){
-					Router.go('eventDetail',{_id: error.details})
+					Router.go('mEventDetail',{_id: error.details})
 				}
 			} else {
-				Router.go('eventDetail', {_id: id} );
+				Router.go('mEventDetail', {_id: id} );
 			}
 		});
 

@@ -10,3 +10,5 @@ Meteor.startup(function () {
     if(!Meteor.roles.findOne({name: "double-secret"}))
         Roles.createRole("double-secret");
 });
+
+console.log(Participations.find().count())

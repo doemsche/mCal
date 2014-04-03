@@ -1,14 +1,14 @@
-Template.eventItem.helpers({
-	ownsEvent: function(){
+Template.mEventItem.helpers({
+	owns_mEvent: function(){
 		return this.userId == Meteor.userId()
 	},
 	participations: function(){
-		return Participations.find({eventId: this._id});
+		return Participations.find({mEventId: this._id});
 	},
 
 });
 
-Template.eventItem.events({
+Template.mEventItem.events({
 
 	'click .btn': function(e){
 		// console.log('event clicked session set');
