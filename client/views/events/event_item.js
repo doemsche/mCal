@@ -11,9 +11,9 @@ Template.eventItem.helpers({
 Template.eventItem.events({
 
 	'click .btn': function(e){
-		console.log('event clicked session set');
-		e.preventDefault();
-		Session.set('eventToDisplayDetails', this._id);
+		// console.log('event clicked session set');
+		// e.preventDefault();
+		// Session.set('eventToDisplayDetails', this._id);
 		
 	}
 });

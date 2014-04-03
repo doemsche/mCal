@@ -17,7 +17,7 @@
         <div class="navbar-collapse collapse">
            
             <ul class="nav navbar-nav navbar-right">
-                {{ loginButtons }}
+                {{> loginButtons }}
             </ul>
         </div>
     </div>
@@ -30,11 +30,11 @@
             </ul>
         </div>
         <div id="notifications">
-            {{yield 'list'}}
+            {{>yield 'list'}}
         </div>
         <div id="adminContainer">
             <div>{{> errors}}</div>
-            {{yield 'detail'}} 
+            {{>yield 'detail'}} 
         </div>
     {{/if}}
 </template>
