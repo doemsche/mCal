@@ -1,10 +1,10 @@
 <template name="mEventDetail">
-<!--   {{#if prev_mEvent}}
-    <div><a href="{{pathFor 'mEventDetail' prev_mEvent}}">Previous Event</a></div>
-  {{/if}} -->
-<!--   {{#if next_mEvent}}
-    <div><a href="{{pathFor 'mEventDetail' next_mEvent}}">Next Event</a></div>
-  {{/if}} -->
+  {{#if prev_mEvent}}
+    <div><a href="{{pathFor 'mEventDetail' _id=prev_mEvent._id}}">Previous Event</a></div>
+  {{/if}}
+  {{#if next_mEvent}}
+    <div><a href="{{pathFor 'mEventDetail' _id=next_mEvent._id}}">Next Event</a></div>
+  {{/if}}
   <div class="m-event">
   	<h3>{{title}}</h3>
   	 <div>{{date}}</div>
