@@ -2,27 +2,15 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "accounts-ui-bootstrap-3": {
-        "version": "0.3.0-1"
-      },
-      "accounts-admin-ui-bootstrap-3": {
-        "version": "0.2.5"
-      },
+      "accounts-ui-bootstrap-3": {},
+      "accounts-admin-ui-bootstrap-3": {},
       "iron-router": {
         "version": "0.7.0"
       },
-      "spin": {
-        "version": "0.2.2"
-      },
-      "modernizr-meteor": {
-        "version": "2.6.2"
-      },
-      "fullcalendar": {
-        "version": "1.6.1"
-      },
-      "percolatestudio-migrations": {
-        "version": "0.6.0"
-      }
+      "spin": {},
+      "modernizr-meteor": {},
+      "fullcalendar": {},
+      "percolatestudio-migrations": {}
     },
     "packages": {
       "accounts-ui-bootstrap-3": {
