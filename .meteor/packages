@@ -15,3 +15,5 @@ roles
 modernizr-meteor
 fullcalendar
 percolatestudio-migrations
+errors
+meteor-clndr

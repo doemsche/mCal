@@ -23,7 +23,7 @@
         </div>
     </div>
     {{#if currentUser}}
-        <div>{{> errors}}</div>
+        <div>{{> meteorErrors}}</div>
     
         <div class="container">
             {{>yield}} 
@@ -33,7 +33,7 @@
         
         <button id="show-cal" ><span class="glyphicon glyphicon-plus"></span>Calendar </button>
         <nav id="cal-menu">
-            {{>calendarView}}
+            {{>meteorClndr}}
         </nav>
 
     {{/if}}
