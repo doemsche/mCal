@@ -2,7 +2,7 @@
   <div class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
             <div class="navbar-header">
-                <a class="navbar-brand" href="">microEvents {{pageTitle}}
+                <a class="navbar-brand" href="{{pathFor 'mEventsList'}}">microEvents {{pageTitle}}
                 </a>
                 {{#if isAdmin}}
                 <div class="admin-btn-container">
@@ -15,7 +15,7 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                {{ loginButtons }}
+                {{> loginButtons }}
             </ul>
             <div class="user-img">
                 <img src="{{userImage}}" />
@@ -26,7 +26,7 @@
         <div>{{> errors}}</div>
     
         <div class="container">
-            {{yield}} 
+            {{>yield}} 
         </div>
 
         

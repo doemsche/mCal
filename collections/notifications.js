@@ -11,7 +11,7 @@ createParticipationNotification = function(participation){
 
 	Notifications.insert({
 		userId: participation.userId,
-		eventId: participation.eventId,
+		mEventId: participation.mEventId,
 		participationId :participation._id,
 		read: false
 	});

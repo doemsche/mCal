@@ -7,10 +7,10 @@ Template.calendarView.rendered = function(){
 		monthNamesShort: ['Jan','Feb','Mar','Apr','Mai','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
 		dayNames: ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'],
 		dayNamesShort: ['So','Mo','Di','Mi','Do','Fr','Sa'],
-		events: function(){
-			var events = Events.find().fetch(),
+		mEvents: function(){
+			var mEvents = MEvents.find().fetch(),
 				arr = [];
-			_.each(events, function(obj,i,context){
+			_.each(mEvents, function(obj,i,context){
 				var fcObj ={
 					id: obj._id,
 					title: obj.title,
@@ -23,11 +23,11 @@ Template.calendarView.rendered = function(){
 			});
 			return arr;
 		}(),
-		eventClick:function(calEvent,jsEvent,view){
+		mEventClick:function(calEvent,jsEvent,view){
 			// Session.set('editing_calevent',calEvent.id);
 			// Session.set('showEditEvent',true);
-			var eventId = calEvent._id;
-			Router.go('/events/'+eventId);
+			var mEventId = calEvent._id;
+			Router.go('/mEvents/'+mEventId);
 		}
 	});
 }
