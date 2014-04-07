@@ -1,1 +1,1 @@
-Session.setDefault('gui-state-cal-date', new Date());
+Session.setDefault('gui-state-cal-date', 'MGyqXsb2go7J3CLnL');

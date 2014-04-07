@@ -21,14 +21,14 @@ Template.userLayout.helpers({
 
 
 
-Template.userLayout.rendered = function(){
-		var date = Session.get('gui-state-cal-date');
+// Template.userLayout.rendered = function(){
+// 		var date = Session.get('gui-state-cal-date');
 
 
-	$('#calendar').fullCalendar( 'gotoDate',
-		date.getFullYear(),
-		date.getMonth(),
-		date.getDate()
-	);
-}
+// 	$('#calendar').fullCalendar( 'gotoDate',
+// 		date.getFullYear(),
+// 		date.getMonth(),
+// 		date.getDate()
+// 	);
+// }
 
