@@ -4,14 +4,14 @@ Meteor.methods({
 	participation: function(options){
 		var user = Meteor.user();
 
-		var participation = _.extend(_.pick(options, 'eventId'),{
+		var participation = _.extend(_.pick(options, 'mEventId'),{
 			userId: user._id,
 			submitted: new Date().getTime()
 		});
 
 		var existingParticipation = Participations.findOne(
 			{
-				eventId: options.eventId,
+				mEventId: options.mEventId,
 				userId: user._id
 			}
 		);
@@ -20,7 +20,7 @@ Meteor.methods({
 			participation.attend = true;
 			var participationId = Participations.insert(participation);
 			createParticipationNotification(participation);
-			Events.update(participation.eventId, {$inc: {participationsCount: 1}});
+			MEvents.update(participation.mEventId, {$inc: {participationsCount: 1}});
 			return participationId;
 		}
 
@@ -30,7 +30,7 @@ Meteor.methods({
 			
 			Participations.update(
 				{
-					eventId: existingParticipation.eventId,
+					mEventId: existingParticipation.mEventId,
 					userId: existingParticipation.userId
 				},
 				{

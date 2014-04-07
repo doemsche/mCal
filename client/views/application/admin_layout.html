@@ -2,7 +2,7 @@
   <div class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
             <div class="navbar-header">
-                <a class="navbar-brand" href="{{pathFor 'eventsList'}}">microEvents {{pageTitle}}
+                <a class="navbar-brand" href="{{pathFor 'mEventsList'}}">microEvents {{pageTitle}}
                 </a>
                 <div class="admin-btn-container">
                     {{#if isAdmin}}
@@ -17,24 +17,24 @@
         <div class="navbar-collapse collapse">
            
             <ul class="nav navbar-nav navbar-right">
-                {{ loginButtons }}
+                {{> loginButtons }}
             </ul>
         </div>
     </div>
     {{#if isAdmin}}
         <div id="sidebar">
             <ul>
-                <li><a href="{{pathFor 'adminEventDetail' }}">Calandar</a></li>
+                <li><a href="{{pathFor 'admin_mEventDetail' }}">Calandar</a></li>
                 <li><a href="{{pathFor 'adminInbox' }}">Inbox</a></li>
                 <li><a href="{{pathFor 'adminTrash' }}">Trash</a></li>
             </ul>
         </div>
         <div id="notifications">
-            {{yield 'list'}}
+            {{>yield 'list'}}
         </div>
         <div id="adminContainer">
             <div>{{> errors}}</div>
-            {{yield 'detail'}} 
+            {{>yield 'detail'}} 
         </div>
     {{/if}}
 </template>

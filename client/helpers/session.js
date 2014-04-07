@@ -1,2 +1,1 @@
-Session.setDefault('gui-state-cal-date', new Date());
-Session.set('admin-detail-event', Events.findOne());
+Session.setDefault('gui-state-cal-date', 'MGyqXsb2go7J3CLnL');

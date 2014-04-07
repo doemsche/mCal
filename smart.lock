@@ -4,26 +4,29 @@
     "basePackages": {
       "accounts-ui-bootstrap-3": {},
       "accounts-admin-ui-bootstrap-3": {},
-      "iron-router": {},
+      "iron-router": {
+        "version": "0.7.0"
+      },
       "spin": {},
       "modernizr-meteor": {},
-      "fullcalendar": {}
+      "fullcalendar": {},
+      "percolatestudio-migrations": {}
     },
     "packages": {
       "accounts-ui-bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
-        "tag": "v0.2.5",
-        "commit": "91cd37a1320213dd209c3a668bf542eeb9c39a00"
+        "tag": "v0.3.0-1",
+        "commit": "93ffa5d0e325dc7026de89f6d90c178fa04bdd3a"
       },
       "accounts-admin-ui-bootstrap-3": {
         "git": "https://github.com/hharnisc/meteor-accounts-admin-ui-bootstrap-3.git",
-        "tag": "v0.2.2",
-        "commit": "2e3e6dda1444a3143e32452f0326520c3ff5d65c"
+        "tag": "v0.2.5",
+        "commit": "381d4ca347f16d2ca2e1e6ca5f51c3f2e9c6c5cd"
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.6.4",
-        "commit": "927bbaed1b87894fb6fb70807f74ff3a5bd89f29"
+        "tag": "v0.7.0",
+        "commit": "05f34bc48c4cad9fdaa366c1ddcabe6980232ece"
       },
       "spin": {
         "git": "https://github.com/SachaG/meteor-spin.git",
@@ -40,15 +43,25 @@
         "tag": "v1.6.1",
         "commit": "78dba7c564bf7baacf6556c70a3cc179d0e137c4"
       },
+      "percolatestudio-migrations": {
+        "git": "https://github.com/percolatestudio/meteor-migrations.git",
+        "tag": "v0.6.0",
+        "commit": "baa77d4c121f6f06b6aa142ee11f71ace8795f7f"
+      },
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
-        "tag": "v3.1.0-1",
-        "commit": "329dccb08bfc18c635676dea600ac9953162cda9"
+        "tag": "v3.1.1-1",
+        "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
       },
       "roles": {
         "git": "https://github.com/alanning/meteor-roles.git",
-        "tag": "v1.2.6",
-        "commit": "f2a9058281f8f2fe028767841d7445aadd6893cf"
+        "tag": "v1.2.8",
+        "commit": "68844ba216c348d332bdb840825850f497f515bb"
+      },
+      "blaze-layout": {
+        "git": "https://github.com/EventedMind/blaze-layout.git",
+        "tag": "v0.2.2",
+        "commit": "8bc53798fe5965669ae67c72f91829fcfdceabfd"
       },
       "jquery-ui": {
         "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
