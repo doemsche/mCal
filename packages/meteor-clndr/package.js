@@ -4,6 +4,7 @@ Package.describe({
 
 Package.on_use(function (api, where) {
   api.use(['jquery','minimongo', 'mongo-livedata', 'templating'], 'client');
+  
 
   api.add_files([ 'moment.js', 'clndr.js',  'meteor-clndr.html', 'meteor-clndr.js', 'clndr.css'], 'client');
 
