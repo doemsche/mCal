@@ -2,8 +2,8 @@
 	<ul>
 		{{#each notifications}}
 			<li>
-				<a href="/admin/notification/{{_id}}">
-					Notification {{#if read}}read{{else}}unread{{/if}}
+				<a class="{{#if read}}read{{else}}unread{{/if}}" href="/admin/notification/{{_id}}">
+					Notification
 				</a>
 			</li>
 	    {{/each}}
