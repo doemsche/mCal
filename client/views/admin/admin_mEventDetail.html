@@ -1,0 +1,10 @@
+<template name="admin_mEventDetail">
+	{{title}} - {{date}}
+	 <div>
+  	<ul class="participations">
+    {{#each participations}}
+      {{> participation}}
+    {{/each}}
+  </ul>
+  </div>
+</template>

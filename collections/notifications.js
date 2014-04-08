@@ -16,3 +16,20 @@ createParticipationNotification = function(participation){
 		read: false
 	});
 };
+
+Meteor.methods({
+	markAsRead: function(options){
+		var notificationId = options.id;
+		var notification = Notifications.findOne({ _id: notificationId} );
+		if(!notification.read){
+			Notifications.update(
+				{
+					_id: notificationId,
+				},
+				{
+					$set:{ read: true }
+				}
+			)
+		}	
+	}
+});

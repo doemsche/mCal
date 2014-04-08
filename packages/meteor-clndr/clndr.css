@@ -82,3 +82,6 @@ font-family: 'Droid Sans Mono';
 #cal .clndr-today-button:hover {
   background-color: #ddd;
 }
+.day.event{
+  cursor:pointer;
+}
