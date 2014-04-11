@@ -1,33 +1,90 @@
 <template name="adminLayout">
-  <div class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="{{pathFor 'mEventsList'}}">microEvents {{pageTitle}}
+    <div id="main-admin">
+        <div id="header">
+            <!-- -->
+            <div class="logo">
+                <a class="home" href="{{pathFor 'mEventsList'}}"> 
+                    microEvents
                 </a>
-               
+            </div>
+
+            <div class="settings dropdown">
+                {{> loginButtons }}
+            </div>
+
+            <div class="search">
 
             </div>
+
+            <div class="user">
+
+            </div>
+               
         </div>
-        <div class="navbar-collapse collapse">
-           
-            <ul class="nav navbar-nav navbar-right">
-                {{> loginButtons }}
-            </ul>
+
+        <div id="sidebar">
+            <div class="inner">
+                <!-- -->
+                <ul class="nav nav-list">
+                    <li class="nav-header">Folders</li>
+                    <li class="folder active">
+                        <a href="{{pathFor 'adminCalendar'}}">Calendar</a>
+                    </li>
+                    <li class="folder">
+                        <a href="{{pathFor 'adminInbox' }}">Inbox</a>
+                    </li>
+                   <!--  <li><a href="{{pathFor 'adminTrash' }}">Trash</a></li> -->
+                </ul>
+            </div>
+        </div>
+
+        <div id="candidates">
+            <!-- -->
+             
+                {{>yield region='list'}}
+        
+        </div>
+
+        <div id="selected-candiate">
+            <!-- -->
+            <div class="inner">
+                {{>yield region='detail'}} 
+            </div>
         </div>
     </div>
-    {{#if isAdmin}}
-        <div id="sidebar">
-            <ul>
-                <li><a href="{{pathFor 'adminCalendar'}}">Calendar</a></li>
-                <li><a href="{{pathFor 'adminInbox' }}">Inbox</a></li>
-               <!--  <li><a href="{{pathFor 'adminTrash' }}">Trash</a></li> -->
-            </ul>
+
+
+<!-- 
+    <div id="admin">
+      <div id="header" class="navbar navbar-admin" role="navigation">
+            <div class="navbar-header">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{{pathFor 'mEventsList'}}">microEvents {{pageTitle}}
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    {{> loginButtons }}
+                </ul>
+            </div>
         </div>
-        <div id="notifications">
-            {{>yield region='list'}}
-        </div>
-        <div id="adminContainer">
-            {{>yield region='detail'}} 
-        </div>
-    {{/if}}
+        {{#if isAdmin}}
+            <div id="sidebar">
+                <div class="inner">
+                    <ul>
+                        <li><a href="{{pathFor 'adminCalendar'}}">Calendar</a></li>
+                        <li><a href="{{pathFor 'adminInbox' }}">Inbox</a></li>
+                       <li><a href="{{pathFor 'adminTrash' }}">Trash</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="notifications">
+                {{>yield region='list'}}
+            </div>
+            <div id="adminContainer">
+                {{>yield region='detail'}} 
+            </div>
+        {{/if}}
+    </div> -->
 </template>
