@@ -67,11 +67,16 @@ html, body {
   font-family: "Lato",sans-serif; }
 
 /* line 15, ../sass/main.scss */
+h1 {
+  font-size: 200%;
+  margin: 10px 0; }
+
+/* line 20, ../sass/main.scss */
 #main-admin {
   font-family: "Lato";
   overflow: hidden;
   height: 100%; }
-  /* line 19, ../sass/main.scss */
+  /* line 24, ../sass/main.scss */
   #main-admin #header {
     -webkit-box-shadow: inset 0 1px 0 0 #74b1e3;
     -moz-box-shadow: inset 0 1px 0 0 #74b1e3;
@@ -91,18 +96,18 @@ html, body {
     color: #fff;
     text-shadow: 0 -1px 0 #226dab;
     border-bottom: 1px solid #226dab; }
-    /* line 38, ../sass/main.scss */
+    /* line 43, ../sass/main.scss */
     #main-admin #header .logo a {
       display: inline;
       color: white; }
-    /* line 42, ../sass/main.scss */
+    /* line 47, ../sass/main.scss */
     #main-admin #header .settings, #main-admin #header .user {
       float: right;
       margin-top: -34px; }
-    /* line 47, ../sass/main.scss */
+    /* line 52, ../sass/main.scss */
     #main-admin #header .user {
       margin-right: 10px; }
-  /* line 52, ../sass/main.scss */
+  /* line 56, ../sass/main.scss */
   #main-admin #sidebar {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -116,7 +121,7 @@ html, body {
     width: 140px;
     height: 100%;
     padding-bottom: 34px; }
-    /* line 65, ../sass/main.scss */
+    /* line 69, ../sass/main.scss */
     #main-admin #sidebar .inner {
       -webkit-box-shadow: inset -6px 8px 12px 1px rgba(0, 0, 0, 0.05);
       -moz-box-shadow: inset -6px 8px 12px 1px rgba(0, 0, 0, 0.05);
@@ -130,7 +135,7 @@ html, body {
       overflow-x: hidden;
       min-height: 100%;
       height: 0; }
-  /* line 81, ../sass/main.scss */
+  /* line 85, ../sass/main.scss */
   #main-admin #candidates {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -146,7 +151,7 @@ html, body {
     padding: 65px 0;
     border-right: 1px solid #ddd;
     border-left: 1px solid #222; }
-  /* line 97, ../sass/main.scss */
+  /* line 101, ../sass/main.scss */
   #main-admin #selected-candiate {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -167,6 +172,129 @@ html, body {
     -o-transition: opacity .3s;
     -ms-transition: opacity .3s;
     transition: opacity .3s; }
-    /* line 118, ../sass/main.scss */
+    /* line 122, ../sass/main.scss */
     #main-admin #selected-candiate .inner {
       top: 135px; }
+  /* line 127, ../sass/main.scss */
+  #main-admin .nav-list {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 0; }
+  /* line 132, ../sass/main.scss */
+  #main-admin .nav-list li a {
+    margin-right: -15px;
+    margin-left: -15px;
+    text-shadow: 0 1px 0; }
+  /* line 137, ../sass/main.scss */
+  #main-admin .nav-list li.active a {
+    background: #28312f;
+    border-top: 1px solid #232b2a;
+    border-bottom: 1px solid #3e4d4b; }
+  /* line 142, ../sass/main.scss */
+  #main-admin .nav-list li.active {
+    background-color: #333; }
+  /* line 145, ../sass/main.scss */
+  #main-admin .nav-list li.folder {
+    -webkit-font-smoothing: antialiased; }
+  /* line 148, ../sass/main.scss */
+  #main-admin .nav-list li a:hover {
+    background-color: #333f3d; }
+  /* line 151, ../sass/main.scss */
+  #main-admin .nav-list li a {
+    color: #eee;
+    text-shadow: 0 1px 0 #000;
+    border-top: 1px solid #333f3d;
+    border-bottom: 1px solid #333f3d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  /* line 160, ../sass/main.scss */
+  #main-admin .nav-list .nav-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    display: block;
+    padding: 3px 15px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #999;
+    text-shadow: 0 1px 0 #222;
+    text-transform: uppercase; }
+  /* line 174, ../sass/main.scss */
+  #main-admin .calendar, #main-admin .inbox {
+    list-style: none;
+    margin: 0;
+    margin-top: 1px; }
+  /* line 180, ../sass/main.scss */
+  #main-admin .inbox-item a, #main-admin .calendar-item a {
+    text-decoration: none;
+    display: block;
+    height: 54px;
+    padding: 10px 20px 0 30px; }
+  /* line 186, ../sass/main.scss */
+  #main-admin .inbox-item a div.bottom, #main-admin .calendar-item a div.bottom {
+    float: left;
+    font-size: 12px;
+    color: #888; }
+  /* line 193, ../sass/main.scss */
+  #main-admin .inbox-item a div.name, #main-admin .calendar-item a div.name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+    margin-bottom: 6px; }
+  /* line 201, ../sass/main.scss */
+  #main-admin .inbox-item, #main-admin .calendar-item {
+    border-bottom: 1px solid #ebeff7;
+    cursor: pointer;
+    overflow: hidden;
+    background: #fdfdfe;
+    margin-left: 0; }
+  /* line 208, ../sass/main.scss */
+  #main-admin .toolbar {
+    -webkit-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.05), inset 0 1px 0 1px white;
+    -moz-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.05), inset 0 1px 0 1px white;
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.05), inset 0 1px 0 1px white;
+    color: 0 1px 6px 1px rgba(0, 0, 0, 0.05) inset 0 1px 0 1px white;
+    position: fixed;
+    z-index: 2000;
+    width: 238px;
+    height: 30px;
+    line-height: 30px;
+    top: 34px;
+    border-bottom: 1px solid #cfd2d6;
+    background: #f2f5fa;
+    color: #505050;
+    text-shadow: 0 1px 0 #fff; }
+  /* line 225, ../sass/main.scss */
+  #main-admin .add-new-event:hover {
+    color: #888;
+    text-decoration: none; }
+  /* line 229, ../sass/main.scss */
+  #main-admin .add-new-event {
+    float: right;
+    margin-right: 10px;
+    color: #333; }
+  /* line 235, ../sass/main.scss */
+  #main-admin .inner {
+    top: 35px;
+    position: relative;
+    min-height: 100%;
+    height: 0;
+    overflow-y: auto;
+    overflow-x: hidden; }
+  /* line 244, ../sass/main.scss */
+  #main-admin .nothing-selected {
+    margin-left: 40%; }
+  /* line 248, ../sass/main.scss */
+  #main-admin .fa.fa-calendar.big,
+  #main-admin .fa.fa-inbox.big {
+    font-size: 800%;
+    color: #eee; }
+  /* line 254, ../sass/main.scss */
+  #main-admin .new-event {
+    margin-left: 30px; }
+  /* line 258, ../sass/main.scss */
+  #main-admin .control-label {
+    padding-bottom: 5px; }

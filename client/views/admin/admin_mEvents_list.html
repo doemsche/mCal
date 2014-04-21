@@ -1,7 +1,15 @@
 <template name="admin_mEventsList">
-	<ul>
+	<div class="toolbar">
+		<a class="add-new-event" title="add new event" href="/admin/mevent/new">Add Event <i class="fa fa-plus-circle"></i></a>
+	</div>
+	<ul class="calendar">
 		{{#each mEvents}}
-			<li><a href="/admin/calendar/{{_id}}">{{title}} ({{participationsCount}})</a></li>
+			<li class="calendar-item" data-id="{{_id}}">
+				<a href="/admin/calendar/{{_id}}">
+					<div class="name">{{title}}</div>
+					<div class="bottom">(Patricipation: {{participationsCount}})</div>
+				</a>
+			</li>
 	    {{/each}}
 	</ul>
 </template>

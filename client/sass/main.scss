@@ -12,6 +12,11 @@ html, body {
 	font-family: "Lato",sans-serif;
 }
 
+h1{
+	font-size: 200%;
+	margin: 10px 0
+}
+
 #main-admin{
 	font-family: "Lato";
 	overflow: hidden;
@@ -48,7 +53,6 @@ html, body {
 			margin-right:10px;
 		}
 	}
-
 	#sidebar{
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -62,7 +66,7 @@ html, body {
 		width: 140px;
 		height: 100%;
 		padding-bottom: 34px;
-		 .inner {
+		.inner {
 			-webkit-box-shadow: inset -6px 8px 12px 1px rgba(0,0,0,.05);
 			-moz-box-shadow: inset -6px 8px 12px 1px rgba(0,0,0,.05);
 			box-shadow: inset -6px 8px 12px 1px rgba(0,0,0,.05);
@@ -76,8 +80,8 @@ html, body {
 			min-height: 100%;
 			height: 0;
 		}
-	}
 
+	}
 	#candidates{
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -118,6 +122,141 @@ html, body {
 		.inner{
 			top:135px;
 		}
+	}
+
+	.nav-list{
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-bottom: 0;
+	}
+	.nav-list li a{
+		margin-right: -15px;
+		margin-left: -15px;
+		text-shadow: 0 1px 0;
+	}
+	.nav-list li.active a{
+		background: #28312f;
+		border-top: 1px solid #232b2a;
+		border-bottom: 1px solid #3e4d4b;
+	}
+	.nav-list li.active{
+		background-color:#333;
+	}
+	.nav-list li.folder{
+		-webkit-font-smoothing: antialiased;
+	}
+	.nav-list li a:hover{
+		background-color: #333f3d;
+	}
+	.nav-list li a{
+		color: #eee;
+		text-shadow: 0 1px 0 #000;
+		border-top: 1px solid #333f3d;
+		border-bottom: 1px solid #333f3d;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.nav-list .nav-header {
+		margin-right: -15px;
+		margin-left: -15px;
+		text-shadow: 0 1px 0 rgba(255,255,255,.5);
+		display: block;
+		padding: 3px 15px;
+		font-size: 11px;
+		font-weight: 700;
+		line-height: 20px;
+		color: #999;
+		text-shadow: 0 1px 0 #222;
+		text-transform: uppercase;
+	}
+
+	.calendar, .inbox {
+		list-style: none;
+		margin: 0;
+		margin-top: 1px;
+	}
+
+	.inbox-item a, .calendar-item a{
+		text-decoration: none;
+		display:block;
+		height: 54px;
+		padding: 10px 20px 0 30px;
+	}
+	.inbox-item a  div.bottom, .calendar-item a div.bottom{
+		float: left;
+		font-size: 12px;
+		
+		color:#888;
+		
+	}
+	.inbox-item a div.name, .calendar-item a div.name{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		color: #333;
+		margin-bottom:6px;
+
+	}
+	.inbox-item, .calendar-item{
+		border-bottom: 1px solid #ebeff7;
+		cursor: pointer;
+		overflow: hidden;
+		background: #fdfdfe;
+		margin-left: 0;
+	}
+	.toolbar{
+		-webkit-box-shadow: 0 1px 6px 1px rgba(0,0,0,.05),inset 0 1px 0 1px #fff;
+		-moz-box-shadow: 0 1px 6px 1px rgba(0,0,0,.05),inset 0 1px 0 1px #fff;
+		box-shadow: 0 1px 6px 1px rgba(0,0,0,.05),inset 0 1px 0 1px #fff;
+		color: 0 1px 6px 1px rgba(0,0,0,.05) inset 0 1px 0 1px #fff;
+		position: fixed;
+		z-index: 2000;
+		width: 238px;
+		height: 30px;
+		line-height: 30px;
+		top: 34px;
+		border-bottom: 1px solid #cfd2d6;
+		background: #f2f5fa;
+		color: #505050;
+		text-shadow: 0 1px 0 #fff;
+	}
+
+	.add-new-event:hover{
+		color:#888;
+		text-decoration: none;
+	}
+	.add-new-event{
+		float: right;
+		margin-right: 10px;
+		color:#333;
+	}
+
+	.inner{
+		top: 35px;
+		position: relative;
+
+		min-height: 100%;
+		height: 0;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	.nothing-selected{
+		margin-left: 40%;
+	}
+	.fa.fa-calendar.big,
+	.fa.fa-inbox.big{
+		font-size: 800%;
+		color: #eee;
+	} 
+
+
+	.new-event{
+		margin-left:30px;
+	}
+
+	.control-label{
+		padding-bottom: 5px;
 	}
 }
 

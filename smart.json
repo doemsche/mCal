@@ -5,6 +5,7 @@
     "iron-router": "0.7.0",
     "spin": {},
     "modernizr-meteor": {},
-    "percolatestudio-migrations": {}
+    "percolatestudio-migrations": {},
+    "font-awesome": {}
   }
 }
