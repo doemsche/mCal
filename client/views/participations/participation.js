@@ -1,5 +1,5 @@
 Template.participation.helpers({
 	submittedText: function(){
-		return new Date(this.submitted).toString();
+		return moment(this.submitted).format('DD.MM.YYYY');
 	}
 });

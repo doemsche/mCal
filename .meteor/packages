@@ -17,3 +17,5 @@ percolatestudio-migrations
 errors
 meteor-clndr
 font-awesome
+bootstrap3-datepicker
+moment

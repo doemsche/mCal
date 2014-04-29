@@ -28,16 +28,16 @@ if(MEvents.find().count() === 0 ){
 	//     userId: user3._id,
 	//     submitted: now - 3 * 3600 * 1000,
 	//   });
-	for (var i = 1; i < 13; i++) {
-		MEvents.insert({
-			title: 'micro Event' + i,
-			author: 'doemsche',
-			userId: adminId,
-			date: new Date(2014,i,15),
-			participationsCount: 0,
-			mId: i
-		});
-  }
+	// for (var i = 1; i < 13; i++) {
+	// 	MEvents.insert({
+	// 		title: 'micro Event' + i,
+	// 		author: 'doemsche',
+	// 		userId: adminId,
+	// 		date: new Date(2014,i,15),
+	// 		participationsCount: 0,
+	// 		mId: i
+	// 	});
+ //  }
 
 
 }
