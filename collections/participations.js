@@ -1,11 +1,25 @@
 Participations = new Meteor.Collection('participations');
 
 Meteor.methods({
+
+
+
 	participation: function(options){
 		var user = Meteor.user();
 
+		var userName = '';
+		var userPicture = '/images/default.png';
+		if(isFacebookUser(user)){
+			userName = getFacebookUserName(user);
+			userPicture = "http://graph.facebook.com/" + user.services.facebook.id + "/picture/?type=square";
+		} else {
+			userName = user.emails[0].address;
+		}
+
 		var participation = _.extend(_.pick(options, 'mEventId'),{
 			userId: user._id,
+			userPicture: userPicture,
+			userName : userName,
 			submitted: new Date().getTime()
 		});
 

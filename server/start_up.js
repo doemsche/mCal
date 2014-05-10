@@ -11,4 +11,4 @@ Meteor.startup(function () {
         Roles.createRole("double-secret");
 });
 
-console.log(Participations.find().count())
+// console.log(Participations.find().count())

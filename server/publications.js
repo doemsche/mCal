@@ -1,5 +1,5 @@
-Meteor.publish('mEvents', function(){	
-	return MEvents.find();	
+Meteor.publish('mEvents', function(options){	
+	return MEvents.find({}, options);	
 });
 
 Meteor.publish('participations', function(mEventId){

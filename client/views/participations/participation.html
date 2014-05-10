@@ -1,5 +1,7 @@
 <template name="participation">
   <li class="{{#unless attend}}not-attending{{/unless}}">
-    {{userId}} - ( {{submittedText}} )
+  	<img src="{{userPicture}}" class="img-rounded" 
+						 	style="vertical-align:middle; width:30px; height:30px;"/>
+    {{userName}} - ( {{submittedText}} )
   </li>
 </template>
