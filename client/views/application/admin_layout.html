@@ -27,13 +27,13 @@
                 <!-- -->
                 <ul class="nav nav-list">
                     <li class="nav-header">Folders</li>
-                    <li class="folder active">
+                    <li class="{{activeRouteClass 'adminCalendar'}}">
                         <a href="{{pathFor 'adminCalendar'}}">
                             <i class="fa fa-calendar"></i>
                             <span class="text">Calendar</span>
                         </a>
                     </li>
-                    <li class="folder">
+                    <li class="{{activeRouteClass 'adminInbox'}}">
                         <a href="{{pathFor 'adminInbox' }}">
                             <i class="fa fa-inbox"></i>
                             <span class="text">Inbox</span>
@@ -48,6 +48,8 @@
             <!-- -->
              
                 {{>yield region='list'}}
+
+                <a href="{{nextPath}}">Mehr </a>
         
         </div>
 
